@@ -7,6 +7,18 @@ let count             = 0;
 
 APP.use(EXPRESS.json());
 
+// Health check endpoint
+APP.get('/', (req, res) => {
+  res.status(200).send({
+    code: 200,
+    message: 'Service is healthy',
+    data: {
+      status: "success",
+      timestamp: new Date()
+    }
+  });
+});
+
 APP.post('/api/v1/save', (req, res) => {
   count++;
   console.log('Request received - ', count);
