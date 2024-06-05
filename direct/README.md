@@ -29,3 +29,19 @@ curl --location --request POST 'http://localhost:3343/api/v1/save' \
     }
 ]'
 ```
+```console
+curl --location 'https://backend-node-rabbitmq.onrender.com/api/v1/save' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+    {
+        "postId": 1,
+        "id": 1,
+        "name": "id labore ex et quam laborum",
+        "email": "foo@bar.biz",
+        "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    }
+]'
+```
+
+Explorer
+https://shrimp.rmq.cloudamqp.com/#/queues
