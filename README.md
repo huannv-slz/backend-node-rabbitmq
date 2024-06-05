@@ -44,6 +44,11 @@ curl --location 'https://backend-node-rabbitmq.onrender.com/api/v1/save' \
 ```
 
 Explorer
+# 
+```user
+user: pjrzgkug
+pass: 3aVtADCfGBZ5ODAxc9K0dOc9rjYeow_R
+```
 https://shrimp.rmq.cloudamqp.com/#/queues
 
 
