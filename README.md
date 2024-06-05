@@ -62,7 +62,7 @@
     > node consumer.js
 
 ```console
-foo@bar: ~$ curl --location --request POST 'http://localhost:3343/api/v1/save' \
+curl --location --request POST 'http://localhost:3343/api/v1/save' \
 --header 'Content-Type: application/json' \
 --data-raw '[
     {
