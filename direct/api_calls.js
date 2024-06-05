@@ -22,7 +22,7 @@ async function makeApiCall() {
 }
 
 (async () => {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 1000000; i++) {
         console.log(`Call ${i + 1}`);
         await makeApiCall();
     }
