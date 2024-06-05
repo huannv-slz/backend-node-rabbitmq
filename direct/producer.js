@@ -11,7 +11,7 @@ function publisher(EXCHANGE, PAYLOAD, cb) {
           autoDelete: false
         });
         //assigning blank string to exchange is to use the default exchange, where queue name is the routing key
-        ch.publish('', CONFIG.RBMQ.ROUTING.T_VALIDATE_JSON, content = new Buffer.from(PAYLOAD), options = { contentType: "text/plain"}, function (err, ok) {
+        ch.publish('', CONFIG.RBMQ.ROUTING.T_VALIDATE_JSON, content = new Buffer.from(PAYLOAD), options = { contentType: "text/plain" }, function (err, ok) {
           if (err != null) {
             console.error("Error: failed to send message\n" + err);
             cb(err);

@@ -1,9 +1,9 @@
-const EXPRESS         = require('express');
-const APP             = EXPRESS();
-const CONFIG          = require('../config/index');
-const CORE            = require('./producer');
-const PORT            = CONFIG.NODE_PORT;
-let count             = 0;
+const EXPRESS = require('express');
+const APP = EXPRESS();
+const CONFIG = require('../config/index');
+const CORE = require('./producer');
+const PORT = CONFIG.NODE_PORT;
+let count = 0;
 
 APP.use(EXPRESS.json());
 
@@ -23,7 +23,7 @@ APP.post('/api/v1/save', (req, res) => {
   count++;
   console.log('Request received - ', count);
   try {
-    req.body = { name: 'api_c1 - '+count, timestamp: new Date(), metric: false };
+    req.body = { name: 'api_c1 - ' + count, timestamp: new Date(), metric: false };
     const _payLoad = JSON.stringify(req.body);
     CORE(CONFIG.RBMQ.EXCHANGE.C_VALIDATE_JSON, _payLoad, function (err, success) {
       if (err) {
