@@ -72,6 +72,7 @@ https://www.cloudamqp.com/
 How to use RabbitMQ
 View message
 Url: https://shrimp.rmq.cloudamqp.com/#/queues/pjrzgkug/topic_validateJSON
+
 <img width="797" alt="image" src="https://github.com/huannv-solazu/backend-node-rabbitmq/assets/170299799/b7076172-5965-4d5f-82f1-5d36e4bfee1c">
 
 ### References
