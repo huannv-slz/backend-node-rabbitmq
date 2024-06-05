@@ -12,6 +12,10 @@
 
     > node consumer.js
 
+Call api to produce
+1. Use postman
+2. Use node api_calls.js
+
 ```console
 curl --location --request POST 'http://localhost:3343/api/v1/save' \
 --header 'Content-Type: application/json' \
