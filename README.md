@@ -66,6 +66,9 @@ curl --location --request POST 'http://localhost:3343/api/v1/save' \
 ]'
 ```
 
+## Create account with github
+https://www.cloudamqp.com/
+
 How to use RabbitMQ
 View message
 Url: https://shrimp.rmq.cloudamqp.com/#/queues/pjrzgkug/topic_validateJSON
